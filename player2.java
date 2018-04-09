@@ -1,8 +1,8 @@
 package gamepac;
 
-public class player1 extends player
+public class player2 extends player
 {
-    public player1(String name)
+    public player2(String name)
     {
         super(name);
     }
@@ -10,18 +10,18 @@ public class player1 extends player
     @Override
     public int kick()
     {
-        return 3;
+        return 5;
     }
 
     @Override
     public int punch()
     {
-        return 2;
+        return 3;
     }
 
     @Override
     public int uppercut()
     {
-        return 5;
+        return 7;
     }
 }

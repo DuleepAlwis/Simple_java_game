@@ -1,4 +1,4 @@
-/*This is a simple fighting game I developped.  You have to fight the Deamon called 'Archemy'. Beat him somehow. Good Luck.
+/*This is a simple fighting game I developped.  You have to fight the Deamon called 'Alchemy'. Beat him somehow. Good Luck.
 
 @
 Developped by Duleep Alwis.
@@ -87,8 +87,8 @@ public class game1
         player p;
         switch(level)
         {
-            case 1:p = new player(name);break;
-            case 2:p = new player1(name);break;
+            case 1:p = new player1(name);break;
+            case 2:p = new player2(name);break;
             case 3:p = new player3(name);break;
             default:return 5;
         }
@@ -135,7 +135,7 @@ public class game1
                 System.out.println("\t"+"\t"+"\t"+"Your health was incremented by "+you+": You got a medi pack");
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------");
-            System.out.println("                  Enemy's shot : "+enemy+"                          ");
+            System.out.println("                  Alchemy's shot : "+enemy+"                          ");
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------");
         }
 

@@ -1,6 +1,6 @@
 package gamepac;
 
-public class player
+abstract public class player
 {
     private String name;
     private int health;
@@ -30,20 +30,11 @@ public class player
         }
     }
 
-    public int kick()
-    {
-        return 3;
-    }
+    abstract int kick();
 
-    public int punch()
-    {
-        return 1;
-    }
+    abstract int punch();
 
-    public int uppercut()
-    {
-        return 5;
-    }
+    abstract int uppercut();
 
     public int defence(int n,int m)
     {

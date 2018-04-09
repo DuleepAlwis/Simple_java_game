@@ -7,18 +7,19 @@ public class player3 extends player
         super(name);
     }
 
-
+    @Override
     public int kick()
     {
         return 7;
     }
 
-    
+    @Override
     public int punch()
     {
         return 5;
     }
 
+    @Override
     public int uppercut()
     {
         return 11;
