@@ -24,6 +24,10 @@ public class player
     public void incrementHealth(int a)
     {
         health = health+a;
+        if(health>20)
+        {
+            health=20;
+        }
     }
 
     public int kick()
