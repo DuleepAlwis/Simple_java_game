@@ -127,12 +127,20 @@ public class game1
             }
             else if(enemy>you)
             {
+                if(you<0)
+                {
+                    you = you*(-1);
+                }
                 p.reduceHealth(enemy-you);
             }
             else 
             {
-                p.incrementHealth(you);
-                System.out.println("\t"+"\t"+"\t"+"Your health was incremented by "+you+": You got a medi pack");
+                if(p.getHealth()!=20)
+                {
+                    p.incrementHealth(you);
+                    System.out.println("\t"+"\t"+"\t"+"Your health was incremented by "+you+" upto your maximum"+": You got a medi pack");
+                }
+                
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------");
             System.out.println("                  Alchemy's shot : "+enemy+"                          ");
